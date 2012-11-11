@@ -1,11 +1,31 @@
 !!! 5
 %html
   %head
-    %title This is the Title in a title tag within the head tag
+    %title jacktrick.com
+    %link(rel="stylesheet" href="stylesheets/styles.css")
   %body
-    %h1 This is a heading within an h1 tag
-    %p
-      Paragraphs
-    %h2 Heading with h2
-    %p
-      Another paragraph
+    #wrapper
+      #header
+        %h1 Jack Bracken
+        %h2 A Simple Site made with Sinatra and HAML!
+      #nav
+        %ol
+          %a(href="/")
+            %li Home
+          %a(href="blog")
+            %li Blog
+          %a(href="code")
+            %li Code
+          %a(href="photo")
+            %li Photography
+          %a(href="contact")
+            %li Contact
+      #content
+        =yield
+      #side_bar
+        %h1 Side Bar
+        %p
+          This is the side bar of the webpage
+      #footer
+        %p
+          This is the footer.

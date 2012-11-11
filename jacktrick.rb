@@ -2,17 +2,21 @@ require 'sinatra'
 require 'haml'
 
 get '/' do
-  haml :layout
+  haml :index
 end
 
-get '/index' do
-  redirect '/index.html'
+get '/blog' do
+  haml :blog
+end
+
+get '/code' do
+  haml :code
 end
 
 get '/photo' do
-  "This is the photography page"
+  haml :photo
 end
 
-get '' do
-
+get '/contact' do
+  haml :contact
 end
