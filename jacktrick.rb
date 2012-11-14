@@ -2,21 +2,26 @@ require 'sinatra'
 require 'haml'
 
 get '/' do
-  haml :index
+  @page = "index"
+  haml :index, :locals => {:page => "HOME"}
 end
 
 get '/blog' do
-  haml :blog
+  @page = "blog"
+  haml :blog, :locals => {:page => "BLOG"}
 end
 
 get '/code' do
-  haml :code
+  @page = "code"
+  haml :code, :locals => {:page => "CODE"}
 end
 
 get '/photo' do
-  haml :photo
+  @page = "photo"
+  haml :photo, :locals => {:page => "PHOTOGRAPHY"}
 end
 
 get '/contact' do
-  haml :contact
+  @page = "contact"
+  haml :contact, :locals => {:page => "CONTACT"}
 end

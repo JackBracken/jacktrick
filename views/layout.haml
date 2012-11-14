@@ -4,22 +4,24 @@
     %title jacktrick.com
     %link(rel="stylesheet" href="stylesheets/styles.css")
   %body
-    #wrapper
+    #container
       #header
         %h1 Jack Bracken
-        %h2 A Simple Site made with Sinatra and HAML!
+        %h2 Best before never
+    #wrapper
       #nav
+        #{locals[:page]}
         %ol
           %a(href="/")
-            %li Home
+            %li HOME
           %a(href="blog")
-            %li Blog
+            %li BLOG
           %a(href="code")
-            %li Code
+            %li CODE
           %a(href="photo")
-            %li Photography
+            %li PHOTOGRAPHY
           %a(href="contact")
-            %li Contact
+            %li CONTACT
       #content
         =yield
       #side_bar
