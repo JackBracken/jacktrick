@@ -42,7 +42,6 @@ body {
 }
 
 #nav img {
-    /*position: relative;*/
     display: block;
     padding: 12px 0;
     margin: 0 auto;
@@ -50,14 +49,16 @@ body {
 }
 
 #nav ul {
-    padding: 22px 12px;
+    /*padding: 22px 12px;*/
     list-style: none;
 }
 
 #nav ul li {
     color: #8da893;
     text-decoration: none;
-    font-size: 62px;
+    font-size: 52px;
+    text-align: center;
+    padding: 0 0 4px 0;
 }
 
 #nav a:link, a:visited {
