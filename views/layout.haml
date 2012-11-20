@@ -5,12 +5,10 @@
     %link(rel="stylesheet" href="stylesheets/styles.css")
   %body
     #container
-      #header
-        %h1 Jack Bracken
-        %h2 Best before never
-    #wrapper
+      /#header
       #nav
-        #{locals[:page]}
+        %h1 jacktrick.com
+        %h2 personal site of jack bracken
         %ol
           %a(href="/")
             %li HOME
@@ -19,15 +17,8 @@
           %a(href="code")
             %li CODE
           %a(href="photo")
-            %li PHOTOGRAPHY
+            %li PHOTO
           %a(href="contact")
             %li CONTACT
       #content
         =yield
-      #side_bar
-        %h1 Side Bar
-        %p
-          This is the side bar of the webpage
-      #footer
-        %p
-          This is the footer.
