@@ -1,2 +1,2 @@
 require './jacktrick'
-run Sinatra::Applicaton
+run Sinatra::Application
