@@ -19,6 +19,7 @@ body {
 }
 
 #nav {
+    font-family: absender;
     position: fixed;
     width:240px;
     float:left;
@@ -27,13 +28,31 @@ body {
     color: #8da893;
 }
 
-#nav ol{
-
+#nav h1{
+    padding:22px 8px;
+    font-size: 36px;
+    text-align: center;
 }
 
-#nav ol li {
+#nav h2{
+    padding:0 8px;
+    text-align: center;
+    font-size: 28px;
+}
+
+#nav ul{
+    padding: 22px 12px;
+    list-style: none;
+}
+
+#nav ul li {
     color: #8da893;
+    text-decoration: none;
+    font-size: 62px;
 }
+
+#nav    a:link {text-decoration:none;}
+/*a:visited {text-decoration:none;}*/
 
 #wrapper{
 
