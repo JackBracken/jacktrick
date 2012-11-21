@@ -3,6 +3,17 @@
     padding:0;
 }
 
+@font-face {
+    font-family: 'absenderregular';
+    src: url('../fonts/absender1-webfont.eot');
+    src: url('../fonts/absender1-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/absender1-webfont.woff') format('woff'),
+         url('../fonts/absender1-webfont.ttf') format('truetype'),
+         url('../fonts/absender1-webfont.svg#absenderregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
 html {
     background-color: #e0d0aa;
     color: #493227;
@@ -19,17 +30,16 @@ body {
 }
 
 #nav {
-    font-family: absender;
+    font-family: absenderregular;
     position: fixed;
     width:240px;
-    /*float:left;*/
     background-color: #1d1e24;
     min-height: 100%;
     color: #8da893;
 }
 
 #nav h1 {
-    padding:22px 8px 0 8px;
+    padding:16px 8px 0 8px;
     font-size: 42px;
     text-align: center;
 }
@@ -41,7 +51,7 @@ body {
     font-family: helvetica;
 }
 
-#nav img {
+.profile_img {
     display: block;
     padding: 12px 0;
     margin: 0 auto;
@@ -49,20 +59,25 @@ body {
 }
 
 #nav ul {
-    /*padding: 22px 12px;*/
     list-style: none;
 }
 
 #nav ul li {
-    color: #8da893;
+
     text-decoration: none;
-    font-size: 52px;
+    font-size: 40px;
     text-align: center;
-    padding: 0 0 4px 0;
+    padding: 3px 0 0 0;
 }
 
 #nav a:link, a:visited {
+    color: #8da893;
     text-decoration:none;
+}
+
+.active_page {
+    background-color: #493227;
+    color: #8da893;
 }
 
 #wrapper{
@@ -80,14 +95,9 @@ h2{
 #content{
     float: right;
     max-width: 500px;
-    /*padding-left: 242px;*/
 }
 
 #content p{
-
-}
-
-#side_bar{
 
 }
 
@@ -95,12 +105,8 @@ h1{
 
 }
 
-#footer{
-
-}
-
 a{
-    color:red;
+    color:#c18e44;
     text-decoration: bold;
 }
 
