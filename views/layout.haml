@@ -9,16 +9,17 @@
         .headline jacktrick
         .site-description-text personal site of jack bracken
         %img.profile_img(src="img/me2.png" alt="Mah ugly mug")
+        /warning, ghetto navbar ahead - need to rewrite to be more DRY
         %ul
           %a(href="/")
-            %li.active_page ABOUT
+            %li{:class => ("active_page" if locals[:page] == "INDEX")} INDEX
           %a(href="blog")
-            %li BLOG
+            %li{:class => ("active_page" if locals[:page] == "BLOG")} BLOG
           %a(href="code")
-            %li CODE
+            %li{:class => ("active_page" if locals[:page] == "CODE")} CODE
           %a(href="photo")
-            %li PHOTO
+            %li{:class => ("active_page" if locals[:page] == "PHOTOGRAPHY")} PHOTO
           %a(href="contact")
-            %li CONTACT
+            %li{:class => ("active_page" if locals[:page] == "CONTACT")} CONTACT
       .content
         =yield

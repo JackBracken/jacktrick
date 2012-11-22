@@ -1,8 +1,12 @@
 require 'sinatra'
 require 'haml'
 
+helpers do
+
+end
+
 get '/' do
-  haml :index, :locals => {:page => "HOME"}
+  haml :index, :locals => {:page => "INDEX"}
 end
 
 get '/blog' do
