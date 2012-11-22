@@ -4,10 +4,10 @@
     %title jacktrick.com
     %link(rel="stylesheet" href="stylesheets/styles.css")
   %body
-    #container
-      #nav
-        %h1 jacktrick
-        %h2 personal site of jack bracken
+    .container
+      .nav
+        .headline jacktrick
+        .site-description-text personal site of jack bracken
         %img.profile_img(src="img/me2.png" alt="Mah ugly mug")
         %ul
           %a(href="/")
@@ -20,5 +20,5 @@
             %li PHOTO
           %a(href="contact")
             %li CONTACT
-      #content
+      .content
         =yield

@@ -1,49 +1,52 @@
-* {
-    margin:0;
-    padding:0;
-}
+/*
+ *  Site design by Jack Bracken
+ */
 
 @font-face {
+    font-weight: 400;
+    font-style: normal;
     font-family: 'absenderregular';
     src: url('../fonts/absender1-webfont.eot');
     src: url('../fonts/absender1-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/absender1-webfont.woff') format('woff'),
          url('../fonts/absender1-webfont.ttf') format('truetype'),
          url('../fonts/absender1-webfont.svg#absenderregular') format('svg');
-    font-weight: 400;
-    font-style: normal;
 }
 
 html {
+    height:100%;
     background-color: #e0d0aa;
     color: #493227;
-    height:100%;
 }
 
 body {
+    margin:0;
+    padding:0;
     height: 100%;
 }
 
-#container {
+.container {
     max-width: 1020px;
 }
 
-#nav {
-    font-family: absenderregular;
+.nav {
     position: fixed;
+    margin:0;
+    padding:0;
     width:240px;
-    background-color: #1d1e24;
     height: 100%;
+    background-color: #1d1e24;
     color: #8da893;
+    font-family: absenderregular;
 }
 
-#nav h1 {
+.headline {
     padding:24px 8px 0 8px;
-    font-size: 42px;
     text-align: center;
+    font-size: 42px;
 }
 
-#nav h2 {
+.site-description-text {
     padding:0 8px;
     text-align: center;
     font-size: 14px;
@@ -52,23 +55,25 @@ body {
 
 .profile_img {
     display: block;
-    padding: 12px 0;
-    margin: 0 auto;
     float: none;
+    margin: 0 auto;
+    padding: 12px 0;
 }
 
-#nav ul {
+.nav ul {
+    margin:0;
+    padding:0;
     list-style: none;
 }
 
-#nav ul li {
+.nav ul li {
+    padding: 3px 0 0 0;
+    text-align: center;
     text-decoration: none;
     font-size: 40px;
-    text-align: center;
-    padding: 3px 0 0 0;
 }
 
-#nav a:link, a:visited {
+.nav a:link, a:visited {
     color: #8da893;
     text-decoration:none;
 }
@@ -78,44 +83,57 @@ body {
     color: #8da893;
 }
 
-#content{
-    width:70%;
+.content {
     margin-left: 240px;
-    max-width: 800px;
     padding-top: 24px;
     padding-bottom: 1px;
+    max-width: 800px;
+    width:70%;
 }
 
-.post-title{
-
+.post-title {
+    padding-left: 36px;
+    font-weight: 300;
+    font-size: 28px;
+    font-family: absenderregular;
 }
 
-.post-date{
-
+.post-date {
+    float: right;
+    color:#8da893;
+    font-weight: 200;
+    font-size: 12px;
+    font-family: helvetica;
 }
 
-.post-box{
-    background-color: white;
-    width:600px;
-    /*margin-left: 16px;*/
-    margin-left: 24px;
+.post-box {
     margin-bottom: 20px;
-    border: 2px;
-    border-style: solid;
+    margin-left: 24px;
+    padding:30px 60px;
+    width:600px;
         -moz-border-radius-bottomright: 50px 25px;
         border-bottom-right-radius: 50px 25px;
-    padding:30px;
+    background-color: white;
 }
 
-a{
+h1, h2, h3 {
+    font-weight: 300;
+    font-family: absenderregular;
+}
+
+a {
     color:#c18e44;
     text-decoration: bold;
 }
 
-p{
+a:visited {
+    color: #8da893;
+}
+
+p {
     font-family: "helvetica";
 }
 
 .post-box ul {
-    /*padding-left: 24px;*/
+    padding-left: 24px;
 }
