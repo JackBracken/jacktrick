@@ -169,3 +169,6 @@ db/*
 run.sh
 *.un
 *~
+.backup/
+.backup/*
+models/init.rb
