@@ -138,4 +138,9 @@ p {
 
 .post-box ul {
     padding-left: 24px;
+    list-style: square;
+}
+
+.post-box li {
+    font-family: helvetica;
 }
