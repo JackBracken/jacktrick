@@ -8,11 +8,3 @@ class BlogPost
 end
 
 # DataMapper.auto_migrate!
-
-
-# Two small test cases
-
-post = BlogPost.new
-post.title = "Foo bar"
-post.body = "I am a blog post thing. Foo bar doo dar."
-post.save
