@@ -2,6 +2,7 @@
 
 require 'data_mapper'
 require 'dm-mysql-adapter'
+require 'dm-chunked_query'
 
 DataMapper::Logger.new($stdout, :debug)
 

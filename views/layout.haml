@@ -13,13 +13,13 @@
         %ul
           %a(href="/")
             %li{:class => ("active_page" if locals[:page] == "INDEX")} INDEX
-          %a(href="blog")
+          %a(href="/blog")
             %li{:class => ("active_page" if locals[:page] == "BLOG")} BLOG
-          %a(href="code")
+          %a(href="/code")
             %li{:class => ("active_page" if locals[:page] == "CODE")} CODE
-          %a(href="photo")
+          %a(href="/photo")
             %li{:class => ("active_page" if locals[:page] == "PHOTOGRAPHY")} PHOTO
-          %a(href="contact")
+          %a(href="/contact")
             %li{:class => ("active_page" if locals[:page] == "CONTACT")} CONTACT
       .content
         =yield

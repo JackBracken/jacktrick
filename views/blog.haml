@@ -1,7 +1,8 @@
-- @content.each do |post|
+- @posts.each do |post|
   %div.post-box
     %h1
       = post.title
+      = post.id
       <span class="post-date">
       =(convert_date(post.created_at))
       </span>
