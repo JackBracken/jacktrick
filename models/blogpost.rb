@@ -6,5 +6,3 @@ class BlogPost
   property :created_at, DateTime
   property :body,       Text
 end
-
-# DataMapper.auto_migrate!
