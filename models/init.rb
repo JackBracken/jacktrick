@@ -1,5 +1,4 @@
 require 'data_mapper'
-require 'dm-mysql-adapter'
 
 DataMapper::Logger.new($stdout, :debug)
 
