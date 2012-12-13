@@ -50,6 +50,10 @@ get '/contact' do
   haml :contact, :locals => { :page => "CONTACT" }
 end
 
+get '/dev/random/?' do
+  "4"
+end
+
 # get '/populate' do
 #     @populate = BlogPost.create(
 #       :title => "Foo the bar",
