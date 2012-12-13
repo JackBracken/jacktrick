@@ -123,6 +123,11 @@ h1, h2, h3 {
     font-family: absenderregular;
 }
 
+h1 a, h1 a:visited {
+    color: #493227;
+    text-decoration: none;
+}
+
 a {
     color:#c18e44;
     text-decoration: bold;

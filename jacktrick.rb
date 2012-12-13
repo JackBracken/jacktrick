@@ -10,18 +10,19 @@ helpers do
     date.strftime("%^b %e, %Y - %R")
   end
 
-  def foo
+  def link_to_post(title, post)
+    "<a href=\"/blog/post/#{post}\">#{title}</a>"
   end
 end
 
 get '/' do
-  haml :index, :locals => {:page => "INDEX"}
+  haml :index, :locals => { :page => "INDEX" }
 end
 
 get '/blog/?' do
   @posts = BlogPost.all :limit => 10,
                         :order => :created_at.desc
-  haml :blog, :locals => {:page => "BLOG"}
+  haml :blog, :locals => { :page => "BLOG" }
 end
 
 get '/blog/:page' do
@@ -29,24 +30,24 @@ get '/blog/:page' do
                         :limit => 10,
                         :order => :created_at.desc
   @posts.inspect
-  haml :blog, :locals => {:page => "BLOG"}
+  haml :blog, :locals => { :page => "BLOG" }
 end
 
 get '/blog/post/:id' do
   @post = BlogPost.first(:id => params[:id])
-  haml :post, :locals => {:page => "BLOG"}
+  haml :post, :locals => { :page => "BLOG" }
 end
 
 get '/code' do
-  haml :code, :locals => {:page => "CODE"}
+  haml :code, :locals => { :page => "CODE" }
 end
 
 get '/photo' do
-  haml :photo, :locals => {:page => "PHOTOGRAPHY"}
+  haml :photo, :locals => { :page => "PHOTOGRAPHY" }
 end
 
 get '/contact' do
-  haml :contact, :locals => {:page => "CONTACT"}
+  haml :contact, :locals => { :page => "CONTACT" }
 end
 
 # get '/populate' do

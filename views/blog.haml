@@ -1,7 +1,7 @@
 - @posts.each do |post|
   %div.post-box
     %h1
-      = post.title
+      =link_to_post(post.title, post.id)
       = post.id
       <span class="post-date">
       =(convert_date(post.created_at))
