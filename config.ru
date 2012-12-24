@@ -4,4 +4,4 @@ require 'bundler'
 Bundler.require
 
 require './jacktrick'
-run jacktrick
+run Sinatra::Application
