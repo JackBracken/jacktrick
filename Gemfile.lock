@@ -77,7 +77,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  data_mapper
+  data_mapper (= 1.2.0)
   dm-mysql-adapter
   dm-postgres-adapter
   haml (= 3.1.7)
