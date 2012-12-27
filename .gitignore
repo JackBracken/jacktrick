@@ -98,9 +98,9 @@ DocProject/Help/html
 publish
 
 # Others
-[Bb]in
+# [Bb]in
 [Oo]bj
-sql
+# sql
 TestResults
 *.Cache
 ClientBin
