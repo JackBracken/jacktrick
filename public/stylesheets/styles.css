@@ -111,10 +111,7 @@ body {
     margin-left: 24px;
     padding:30px 60px;
     width:600px;
-        -moz-border-radius-bottomright: 50px 25px;
-        border-bottom-right-radius: 50px 25px;
     background-color: white;
-
     box-shadow: 10px 10px 30px #493227;
 }
 
