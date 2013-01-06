@@ -15,7 +15,7 @@ helpers do
 
   def authorized?
     @auth ||=  Rack::Auth::Basic::Request.new(request.env)
-    @auth.provided? && @auth.basic? && @auth.credentials && @auth.credentials == ['admin', 'password']
+    @auth.provided? && @auth.basic? && @auth.credentials && @auth.credentials == ['admin', 'lol']
   end
 
   def convert_date(date)
@@ -50,6 +50,15 @@ post '/blog/new/?' do
       :body => params[:body],
       :created_at => Time.now
   )
+
+  redirect '/blog/'
+end
+
+get '/blog/delete/:id/?' do
+  protected!
+
+  @record = BlogPost.get(params[:id])
+  @record.destroy
 
   redirect '/blog/'
 end
