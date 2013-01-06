@@ -146,3 +146,20 @@ p {
 .post-box li {
     font-family: helvetica;
 }
+
+.post-box label {
+    float: left;
+    text-align: right;
+    margin-right: 15px;
+    width: 10%;
+}
+
+.post-box input, .post-box textarea {
+    max-width: 90%;
+    width: 90%;
+    margin:0 5% 5px 5%;
+}
+
+.post-box textarea {
+    min-height: 240px;
+}
