@@ -2,7 +2,6 @@
   %div.post-box
     %h1
       =link_to_post(post.title, post.id)
-      = post.id
       <span class="post-date">
       =(convert_date(post.created_at))
       </span>

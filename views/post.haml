@@ -5,4 +5,4 @@
     =(convert_date(@post.created_at))
     </span>
   %p
-    =@post.body
+    = markdown(@post.body)
