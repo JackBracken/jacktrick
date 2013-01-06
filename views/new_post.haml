@@ -1,0 +1,8 @@
+%div.post-box
+  %h1 New post
+  %form{:action => "", :method => "post"}
+    %input{ :type => "text", :name => "title", :placeholder => "Title of the post here", :class => "text", :required => true, :autofocus => true }
+
+    %textarea{ :name => "body", :placeholder => "Body of the post here", :class => "text", :required => true }
+
+    %input{:type => "submit", :value => "Submit post", :class => "button"}
